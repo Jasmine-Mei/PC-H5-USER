@@ -5,7 +5,11 @@
 </template>
 
 <script>
-export default {}
+export default {
+  created () {
+    console.log(process.env.VUE_APP_BASE_API)
+  }
+}
 </script>
 
 <style></style>
