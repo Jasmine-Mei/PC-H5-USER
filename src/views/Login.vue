@@ -1,6 +1,6 @@
 <template>
   <div class="login">
-    登录页面
+    {{$t('Login')}}
   </div>
 </template>
 

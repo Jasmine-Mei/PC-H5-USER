@@ -20,4 +20,14 @@ const router = new VueRouter({
   routes
 })
 
+// 全局前置守卫
+router.beforeEach((to, from, next) => {
+  next()
+})
+
+// // 全局后置钩子
+router.afterEach((to, from) => {
+  // ...
+})
+
 export default router
