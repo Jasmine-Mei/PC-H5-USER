@@ -12,12 +12,7 @@ module.exports = {
   productionSourceMap: false,
   chainWebpack: config => {
     config.resolve.alias
-      .set('@', resolve('src'))
-      .set('@', resolve('src/views'))
-      .set('@', resolve('src/components'))
-      .set('@', resolve('src/common'))
-      .set('@', resolve('src/utils'))
-      .set('@', resolve('src/service')) /* 别名配置 */
+      .set('@', resolve('src')) /* 别名配置 */
     config.optimization.runtimeChunk('single')
   }
 }
